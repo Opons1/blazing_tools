@@ -71,7 +71,7 @@ minetest.register_tool("blazing_tools:sword_blazing", {
 			fleshy={times={[1]=0.20, [2]=0.20, [3]=0.20}, uses=1000, maxlevel=2},
 			snappy={times={[1]=0.20, [2]=0.20, [3]=0.20}, uses=1000, maxlevel=2}
 		},
-		damage_groups = {fleshy=10},
+		damage_groups = {fleshy=20},
 	},
 	groups = {sword = 1, enchantability=22}
 })
@@ -90,7 +90,7 @@ minetest.register_tool("blazing_tools:multitool_blazing", {
 			crumbly={times={[1]=0.05, [2]=0.05, [3]=0.05}, uses=4000, maxlevel=2},
 			cracky={times={[1]=0.10, [2]=0.10, [3]=0.10}, uses=4000, maxlevel=2},
 		},
-		damage_groups = {fleshy=10},
+		damage_groups = {fleshy=20},
 	},
 	groups = {multitool = 1, enchantability=22}
 })
