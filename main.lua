@@ -65,7 +65,7 @@ minetest.register_tool("blazing_tools:sword_blazing", {
 	inventory_image = "blazing_sword.png",
 	light_source = 13,
 	tool_capabilities = {
-		full_punch_interval = 1.0,
+		full_punch_interval = 0.3,
 		max_drop_level=3,
 		groupcaps={
 			fleshy={times={[1]=0.20, [2]=0.20, [3]=0.20}, uses=1000, maxlevel=2},
@@ -74,4 +74,23 @@ minetest.register_tool("blazing_tools:sword_blazing", {
 		damage_groups = {fleshy=10},
 	},
 	groups = {sword = 1, enchantability=22}
+})
+
+minetest.register_tool("blazing_tools:multitool_blazing", {
+	description = S("Blazing Multitool"),
+	inventory_image = "blazing_multitool.png",
+	light_source = 14,
+	tool_capabilities = {
+		full_punch_interval = 0.3,
+		max_drop_level=3,
+		groupcaps={
+			snappy={times={[1]=0.20, [2]=0.20, [3]=0.20}, uses=4000, maxlevel=2},
+			choppy={times={[1]=0.15, [2]=0.15, [3]=0.15}, uses=4000, maxlevel=2},
+			fleshy={times={[1]=0.15, [2]=0.15, [3]=0.15}, uses=4000, maxlevel=2},
+			crumbly={times={[1]=0.05, [2]=0.05, [3]=0.05}, uses=4000, maxlevel=2},
+			cracky={times={[1]=0.10, [2]=0.10, [3]=0.10}, uses=4000, maxlevel=2},
+		},
+		damage_groups = {fleshy=10},
+	},
+	groups = {multitool = 1, enchantability=22}
 })

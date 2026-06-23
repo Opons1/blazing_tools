@@ -5,11 +5,10 @@ if minetest.get_modpath("blazing_tools") then
 	minetest.register_craft({
 		output = "blazing_tools:blazing_block",
 		recipe = {
-			{"default:gold_ingot", "default:coal_lump", "default:gold_ingot"},
-			{"default:coal_lump", "bucket:bucket_lava", "default:coal_lump"},
-			{"default:gold_ingot", "default:coal_lump", "default:gold_ingot"},
+			{"caverealms:glow_obsidian_2", "underworlds:hot_iron", "technic:red_energy_crystal"},
+			{"birthstones:garnet", "lavastuff:block", "birthstones:ruby"},
+			{"underch:burner", "too_many_stones:ammolite", "ethereal:fire_dust"},
 		},
-		replacements = {{'bucket:bucket_lava', 'bucket:bucket_empty'},},
 	})
 
 	minetest.register_craft({
@@ -45,6 +44,15 @@ if minetest.get_modpath("blazing_tools") then
 			{"blazing_tools:blazing_block"},
 			{"blazing_tools:blazing_block"},
 			{"group:stick"},
+		}
+	})
+
+	minetest.register_craft({
+		output = "blazing_tools:multitool_blazing",
+		recipe = {
+			{"", "blazing_tools:shovel_blazing", "blazing_tools:pick_blazing"},
+			{"blazing_tools:blazing_block", "blazing_tools:sword_blazing", "blazing_tools:axe_blazing"},
+			{"default:gold_ingot", "blazing_tools:blazing_block", ""},
 		}
 	})
 end
